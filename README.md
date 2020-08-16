@@ -4,5 +4,23 @@ L'ensemble de ce code est expliqué et commenté dans la série "Yolo" faite sur
 
 ## Contruire un dataset
 
-Cette version de yolo lit un dataset dont la description des images est dans des xml (fait avec LabelImg par exemple, cf ce [tutoriel](https://www.youtube.com/watch?v=VWXXFFDqBqA)); mettre le repertoire contenant les données dans le fichier config.py
+Cette version de yolo lit un dataset dont la description des images est dans des xmls (fait avec LabelImg par exemple, cf ce [tutoriel](https://www.youtube.com/watch?v=VWXXFFDqBqA)); mettre le repertoire contenant les données dans le fichier config.py
 
+## Corriger le fichoer config.py
+
+Si nécessaire, modifier le fichier config.py
+
+## Lancer l'entrainement
+
+Lancer l'entrainement avec train.py
+
+## Mesure de précision
+
+Le programme d'entrainementaffiche une mesure de précision mais vous pouvez refaire une mesure avec la commande map.py
+
+## Inférence
+
+Vous pouvez faire des inférences avec :
+ - inference_dataset.py : permet de faire des inférences sur le dataset d'entrainement ou de test/validation (voir option on_test dans inférence_dataset.py)
+ - inference_camera.py : inférence sur votre cam
+ 

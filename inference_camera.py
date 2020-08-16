@@ -23,7 +23,7 @@ grid=np.meshgrid(np.arange(cfg.cellule_x, dtype=np.float32), np.arange(cfg.cellu
 grid=np.expand_dims(np.stack(grid, axis=-1), axis=2)
 grid=np.tile(grid, (1, 1, cfg.nbr_boxes, 1))
 
-cap=cv2.VideoCapture('video.mp4')
+cap=cv2.VideoCapture(0)
 
 while True:
   ret, frame=cap.read()
