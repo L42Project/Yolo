@@ -24,3 +24,7 @@ Vous pouvez faire des inférences avec :
  - inference_dataset.py : permet de faire des inférences sur le dataset d'entrainement ou de test/validation (voir option on_test dans inférence_dataset.py)
  - inference_camera.py : inférence sur votre cam
 
+### Divers
+
+ - stats_dataset.py : donne des statistiques sur votre dataset
+ 
