@@ -9,9 +9,6 @@ import common
 import config as cfg
 import model
 
-import os
-os.environ['CUDA_VISIBLE_DEVICES']='-1'
-
 nbr_classes=1 # A GERER ...
 
 model=model.model(nbr_classes, cfg.nbr_boxes, cfg.cellule_y, cfg.cellule_x)

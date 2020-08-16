@@ -9,9 +9,6 @@ import common
 import config as cfg
 import model
 
-import os
-os.environ['CUDA_VISIBLE_DEVICES']='-1'
-
 # Mettre cette variable à True si vous voulez voir le résultat sur la base de test
 on_test=False
 
