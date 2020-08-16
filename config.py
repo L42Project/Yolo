@@ -1,6 +1,6 @@
 import numpy as np
 
-dir_dataset="./dataset_C18/"
+dir_dataset="./dataset/"
 dir_test=dir_dataset+"/test/"
 
 dir_model="./my_model/"
