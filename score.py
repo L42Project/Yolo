@@ -79,9 +79,10 @@ def calcul_map(model, dataset, nbr_classes, labels2, seuil_iou=0.5, beta=1., con
 
   score=np.mean((1+beta*beta)*precision*rappel/(beta*beta*precision+rappel+1E-7))
 
-  precision=tab_tp/(tab_nbr_reponse+1E-7)
-  rappel=tab_tp/(tab_true_boxes+1E-7)
-  score=np.mean((1+beta*beta)*precision*rappel/(beta*beta*precision+rappel+1E-7))
-  
+  if verbose:
+    print("Précision: {:.2%}".format(np.mean(precision)))
+    print("Rappel   : {:.2%}".format(np.mean(rappel)))
+    print("Score    : {:.2%}".format(score))
+
   return score
 

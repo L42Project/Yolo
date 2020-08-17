@@ -35,16 +35,15 @@ model=model.model(nbr_classes, cfg.nbr_boxes, cfg.cellule_y, cfg.cellule_x)
 checkpoint=tf.train.Checkpoint(model=model)
 checkpoint.restore(tf.train.latest_checkpoint(cfg.dir_model))
 
-start=time.time()
-accuracy=score.calcul_map(model, dataset, nbr_classes, labels2)
-temps=time.time()-start
 print("Base d'appentissage:")
-print("   Resultat {:.2%} [temps: {:.1f} sec.]".format(accuracy, temps))
-
 start=time.time()
-accuracy=score.calcul_map(model, test_ds, nbr_classes, labels2_test)
+accuracy=score.calcul_map(model, dataset, nbr_classes, labels2, verbose=True)
 temps=time.time()-start
+
 print("Base de test/validation:")
-print("   Resultat {:.2%} [temps: {:.1f} sec.]".format(accuracy, temps))
+start=time.time()
+accuracy=score.calcul_map(model, test_ds, nbr_classes, labels2_test, verbose=True)
+temps=time.time()-start
+
 
 
