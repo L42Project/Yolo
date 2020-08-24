@@ -27,7 +27,7 @@ batch_size=32
 nbr_entrainement=40
 
 # Nombre d'image générée à partir d'une image 
-nbr_image_generee=1
+nbr_image_generee=10
 # Nombre d'image générée à partir d'une image pour le calcul de précision 
 nbr_image_generee_test=10  
 
