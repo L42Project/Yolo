@@ -23,8 +23,9 @@ Le programme d'entrainement affiche une mesure de précision tout au long de l'e
 ### Inférences
 
 Vous pouvez faire des inférences avec :
- - inference_dataset.py : permet de faire des inférences sur le dataset d'entrainement ou de test/validation (voir option on_test dans inférence_dataset.py)
+ - inference_image.py : permet de faire des inférences sur des images en précisant un répertoire 
  - inference_camera.py : inférence sur votre cam
+ - inference_youtube.py : inférence sur une vidéo youtube
 
 ### Divers
 
