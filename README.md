@@ -10,6 +10,8 @@ Cette version de yolo lit un dataset dont la description des images est dans des
 
 Si nécessaire, modifier les options du fichier config.py
 
+Utiliser kmeans_anchors.py pour avoir les tailles de boites optimales (et corriger config.py)
+
 ### Lancer l'entrainement
 
 Lancer l'entrainement avec train.py
