@@ -17,9 +17,9 @@ train_model='my_IA'
 # Généré par convert.py
 fast_train_model='my_fast_IA'
 
-#my_model='model_resnet'
+my_model='model_resnet'
 #my_model='model_mobilenet'
-my_model='model_vgg'
+#my_model='model_vgg'
 
 image_size=128
 nbr_cellule=8
